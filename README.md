@@ -4,49 +4,51 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-Gabungkan video dan musik jadi satu mix video dalam hitungan detik! Cocok untuk kompilasi video, background streaming, atau konten YouTube.
+🌐 **Language:** English | [Bahasa Indonesia](README.id.md)
 
-**⚡ 1 jam video = ~5-30 detik proses** (tanpa rendering, PC kentang friendly!)
+Combine videos and music into one mixed video in seconds! Perfect for video compilations, streaming backgrounds, or YouTube content.
+
+**⚡ 1 hour video = ~5-30 seconds processing** (no rendering, low-end PC friendly!)
 
 ---
 
 ## 📑 Table of Contents
 
 - [Download & Install](#-download--install)
-- [Build jadi App Windows](#-build-jadi-app-windows-exe)
-- [Cara Pakai](#-cara-pakai)
-- [Fitur](#-fitur)
+- [Build Windows App](#-build-windows-app-exe)
+- [How to Use](#-how-to-use)
+- [Features](#-features)
 - [Tips](#-tips)
 - [Author](#-author)
-- [Lisensi](#-lisensi)
+- [License](#-license)
 
 ---
 
 ## 📥 Download & Install
 
-### Cara 1: Download Release (Recommended)
+### Option 1: Download Release (Recommended)
 
-1. Buka halaman [Releases](../../releases)
-2. Download `Mixit.zip` dari release terbaru
+1. Go to [Releases](../../releases) page
+2. Download `Mixit.zip` from latest release
 3. Extract zip
-4. Jalankan `Mixit.exe`
+4. Run `Mixit.exe`
 
-> ⚠️ Pastikan folder `bin/` (berisi `ffmpeg.exe` & `ffprobe.exe`) ada di sebelah `Mixit.exe`
+> ⚠️ Make sure `bin/` folder (containing `ffmpeg.exe` & `ffprobe.exe`) is next to `Mixit.exe`
 
 ---
 
-### Cara 2: Jalankan dari Source Code
+### Option 2: Run from Source Code
 
 **Step 1: Download Project**
 ```bash
 git clone https://github.com/sondero-ai/mixit.git
 cd mixit
 ```
-Atau klik tombol hijau **Code** → **Download ZIP** → Extract
+Or click green **Code** button → **Download ZIP** → Extract
 
 **Step 2: Install Python**
-- Download dari [python.org](https://www.python.org/downloads/) (versi 3.10+)
-- Saat install, centang ✅ **Add Python to PATH**
+- Download from [python.org](https://www.python.org/downloads/) (version 3.10+)
+- During install, check ✅ **Add Python to PATH**
 
 **Step 3: Install Dependencies**
 ```bash
@@ -54,53 +56,53 @@ pip install -r requirements.txt
 ```
 
 **Step 4: Download FFmpeg**
-- Download dari [gyan.dev/ffmpeg](https://www.gyan.dev/ffmpeg/builds/) (pilih `ffmpeg-release-essentials.zip`)
-- Extract, copy `ffmpeg.exe` dan `ffprobe.exe` ke folder `bin/`
+- Download from [gyan.dev/ffmpeg](https://www.gyan.dev/ffmpeg/builds/) (choose `ffmpeg-release-essentials.zip`)
+- Extract, copy `ffmpeg.exe` and `ffprobe.exe` to `bin/` folder
 
-**Step 5: Jalankan**
+**Step 5: Run**
 ```bash
 python main.py
 ```
 
 ---
 
-## 🔨 Build jadi App Windows (.exe)
+## 🔨 Build Windows App (.exe)
 
-Ingin jadikan standalone app tanpa perlu Python?
+Want a standalone app without Python?
 
 ```bash
 pip install pyinstaller
 pyinstaller Mixit.spec
 ```
 
-Hasil ada di folder `dist/Mixit.exe`. Copy juga folder `bin/` ke sebelah exe.
+Output is in `dist/Mixit.exe`. Also copy `bin/` folder next to the exe.
 
 ---
 
-## 🎯 Cara Pakai
+## 🎯 How to Use
 
-1. **Pilih folder video** - Klik tombol atau drag & drop folder
-2. **Pilih folder musik** - Klik tombol atau drag & drop folder  
-3. **Atur durasi** - Ketik manual atau klik preset (1m, 5m, 30m, 1h, 2h)
-4. **Klik START MIXING** - Tunggu sebentar, selesai!
+1. **Select video folder** - Click button or drag & drop folder
+2. **Select music folder** - Click button or drag & drop folder  
+3. **Set duration** - Type manually or click preset (1m, 5m, 30m, 1h, 2h)
+4. **Click START MIXING** - Wait a moment, done!
 
-### Opsi Tambahan
-| Opsi | Fungsi |
-|------|--------|
-| **Smooth Audio** | Crossfade antar lagu (lebih halus) |
-| **Playlist Order** | Urutan musik: Random / A-Z / Manual |
-| **Format** | Output: MP4 atau MKV |
-| **Batch Mode** | Buat banyak mix sekaligus |
+### Additional Options
+| Option | Function |
+|--------|----------|
+| **Smooth Audio** | Crossfade between songs (smoother) |
+| **Playlist Order** | Music order: Random / A-Z / Manual |
+| **Format** | Output: MP4 or MKV |
+| **Batch Mode** | Create multiple mixes at once |
 
 ---
 
-## ✨ Fitur
+## ✨ Features
 
-- ⚡ Ultra cepat (stream copy, tanpa rendering)
-- 🎲 Video & musik diacak otomatis
-- 🔄 Auto-loop sampai durasi tercapai
-- 🎵 Multi-track musik dengan crossfade
-- 🎬 Lagu terakhir selesai natural
+- ⚡ Ultra fast (stream copy, no rendering)
+- 🎲 Auto shuffle videos & music
+- 🔄 Auto-loop until duration reached
+- 🎵 Multi-track music with crossfade
+- 🎬 Last song finishes naturally
 - 📁 Drag & drop support
 - 🌐 English & Bahasa Indonesia
 - 📦 Batch processing
@@ -109,15 +111,15 @@ Hasil ada di folder `dist/Mixit.exe`. Copy juga folder `bin/` ke sebelah exe.
 
 ## ⚠️ Tips
 
-- **Format video sama** = hasil lebih baik (misal semua MP4 1080p)
-- **Format audio sama** = mode Fast Audio bisa dipakai (misal semua MP3)
-- **Durasi output** = bisa sedikit lebih panjang (lagu terakhir selesai dulu)
+- **Same video format** = better results (e.g., all MP4 1080p)
+- **Same audio format** = Fast Audio mode works (e.g., all MP3)
+- **Output duration** = may be slightly longer (last song finishes first)
 
 ---
 
 ## 👤 Author
 
-**Sondero Aisaya**
+**Sondero AI**
 
 - 🌐 Portfolio: [sondero.xyz](https://sondero.xyz)
 - 📰 AI News & Tools: [cogitodaily.com](https://cogitodaily.com)
@@ -125,9 +127,9 @@ Hasil ada di folder `dist/Mixit.exe`. Copy juga folder `bin/` ke sebelah exe.
 
 ---
 
-## 📄 Lisensi
+## 📄 License
 
-MIT License - Bebas digunakan untuk pribadi maupun komersial.
+MIT License - Free for personal and commercial use.
 
 ---
 
