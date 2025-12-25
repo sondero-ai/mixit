@@ -10,6 +10,8 @@ Gabungkan video dan musik jadi satu mix video dalam hitungan detik! Cocok untuk 
 
 **⚡ 1 jam video = ~5-30 detik proses** (tanpa rendering, PC kentang friendly!)
 
+![Mixit Screenshot](assets/screenshot.png)
+
 ---
 
 ## 📑 Daftar Isi
@@ -129,7 +131,7 @@ Hasil ada di folder `dist/Mixit.exe`. Copy juga folder `bin/` ke sebelah exe.
 
 ## 📄 Lisensi
 
-MIT License - Bebas digunakan untuk pribadi maupun komersial.
+**Personal Use Only** - Software ini gratis untuk penggunaan pribadi, non-komersial. Dilarang menjual atau mendistribusikan ulang.
 
 ---
 

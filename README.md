@@ -10,6 +10,8 @@ Combine videos and music into one mixed video in seconds! Perfect for video comp
 
 **⚡ 1 hour video = ~5-30 seconds processing** (no rendering, low-end PC friendly!)
 
+![Mixit Screenshot](assets/screenshot.png)
+
 ---
 
 ## 📑 Table of Contents
@@ -129,7 +131,7 @@ Output is in `dist/Mixit.exe`. Also copy `bin/` folder next to the exe.
 
 ## 📄 License
 
-MIT License - Free for personal and commercial use.
+**Personal Use Only** - This software is free for personal, non-commercial use. Redistribution or sale is prohibited.
 
 ---
 
